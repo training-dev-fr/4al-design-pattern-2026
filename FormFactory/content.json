@@ -1,0 +1,45 @@
+    [
+        {
+            "type": "text",
+            "label": "Nom d'utilisateur",
+            "id": "username",
+            "name": "username"
+        },
+        {
+            "type": "password",
+            "label": "Mot de passe",
+            "id": "password",
+            "name": "password"
+        },
+        {
+            "type": "email",
+            "label": "E-mail de récupération",
+            "id": "recoveryEmail",
+            "name": "recoveryEmail"
+        },
+        {
+            "type":"checkbox",
+            "multiple":false,
+            "label":"Civilité",
+            "id":"gender",
+            "name":"gender",
+            "options":[
+                "H",
+                "F"
+            ]
+        },
+        {
+            "type":"checkbox",
+            "multiple":true,
+            "label":"Fruits",
+            "id":"fruits",
+            "name":"fruits",
+            "options":[
+                "Banane",
+                "Pomme",
+                "Poire",
+                "Ananas",
+                "Kiwi"
+            ]
+        }
+    ]

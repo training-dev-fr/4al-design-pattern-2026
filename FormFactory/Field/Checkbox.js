@@ -38,8 +38,10 @@ export default class Checkbox extends Field {
                         this.selectedValue.push(e.target.value);
                     }
                     callback(this.selectedValue);
+                    super.onChange(this.selectedValue);
                 } else {
                     callback(e.target.value);
+                    super.onChange(e.target.value);
                 }
             });
         }

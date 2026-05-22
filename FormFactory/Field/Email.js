@@ -14,6 +14,7 @@ export default class Email extends Field{
     onChange(callback){
         this.element.addEventListener("keyup",(e) => {
             callback(e.target.value);
+            super.onChange(e.target.value);
         });
     }
 }

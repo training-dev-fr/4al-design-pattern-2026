@@ -3,19 +3,22 @@
             "type": "text",
             "label": "Nom d'utilisateur",
             "id": "username",
-            "name": "username"
+            "name": "username",
+            "format":"/[a-zA-Z]{3,}/"
         },
         {
             "type": "password",
             "label": "Mot de passe",
             "id": "password",
-            "name": "password"
+            "name": "password",
+            "format":"/*{6,}/"
         },
         {
             "type": "email",
             "label": "E-mail de récupération",
             "id": "recoveryEmail",
-            "name": "recoveryEmail"
+            "name": "recoveryEmail",
+            "format":"/.*@.*/"
         },
         {
             "type": "checkbox",

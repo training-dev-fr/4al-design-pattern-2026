@@ -21,7 +21,10 @@ export default class Ratings extends Field{
 
     onChange(callback){
         this.ratings.querySelectorAll('.star').forEach(star => {
-            star.addEventListener('click',(e) => callback(e.currentTarget.dataset.value));
+            star.addEventListener('click',(e) => {
+                callback(e.currentTarget.dataset.value);
+                super.onChange(e.currentTarget.dataset.value);
+            });
         });
     }
 }

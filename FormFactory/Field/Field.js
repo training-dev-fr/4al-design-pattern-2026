@@ -4,6 +4,9 @@ export default class Field {
         this.id = item.id;
         this.name = item.name;
         this.element = null;
+        if(item.format){
+            this.format = item.format;
+        }
     }
 
     display(children) {
@@ -30,5 +33,9 @@ export default class Field {
         }
 
         return this.element;
+    }
+
+    onChange(value){
+        this.selectedValue = value;
     }
 }

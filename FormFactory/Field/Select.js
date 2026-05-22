@@ -21,6 +21,7 @@ export default class Checkbox extends Field {
     onChange(callback) {
         this.element.addEventListener("change",(e) => {
             callback(e.target.value);
+            super.onChange(e.target.value);
         });
     }
 }

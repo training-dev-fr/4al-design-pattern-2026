@@ -18,28 +18,41 @@
             "name": "recoveryEmail"
         },
         {
-            "type":"checkbox",
-            "multiple":false,
-            "label":"Civilité",
-            "id":"gender",
-            "name":"gender",
-            "options":[
+            "type": "checkbox",
+            "multiple": false,
+            "label": "Civilité",
+            "id": "gender",
+            "name": "gender",
+            "options": [
                 "H",
                 "F"
             ]
         },
         {
-            "type":"checkbox",
-            "multiple":true,
-            "label":"Fruits",
-            "id":"fruits",
-            "name":"fruits",
-            "options":[
+            "type": "checkbox",
+            "multiple": true,
+            "label": "Fruits",
+            "id": "fruits",
+            "name": "fruits",
+            "options": [
                 "Banane",
                 "Pomme",
                 "Poire",
                 "Ananas",
                 "Kiwi"
             ]
-        }
+        },
+        {
+            "type": "select",
+            "label": "Pays",
+            "id": "country",
+            "name": "country",
+            "options": {
+                "fr": "France",
+                "be": "Belgique",
+                "ch": "Suisse",
+                "es": "Espagne"
+            }
+        },
+        { "type": "ratings", "label":"Note"}
     ]

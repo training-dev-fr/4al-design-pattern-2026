@@ -1,4 +1,5 @@
 import FormFactory from "./FormFactory.js";
+const formFactory = new FormFactory();
 
 const loadData = async () => {
     let res = await fetch('./content.json');
@@ -6,8 +7,8 @@ const loadData = async () => {
     return data;
 }
 
-const showField = (element) => {
-    let item = new FormFactory(element);
+const showField = async (element) => {
+    let item = await formFactory.create(element);
     document.querySelector(".form").appendChild(item.display());
     item.onChange((value) => console.log(value));
 }
@@ -15,7 +16,7 @@ const showField = (element) => {
 const init = async () => {
     let data = await loadData();
     for(let element of data){
-        showField(element);
+        await showField(element);
     }
 }
 
